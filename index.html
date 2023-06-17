@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Filter_Image_JS</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="container">
+      <div class="content">
+        <div class="image_upload">
+          <div class="image">
+            <img src="" alt="Image" />
+          </div>
+          <div class="up">
+            <label for="upload">Upload</label>
+            <input type="file" id="upload" class="load" name="upload" />
+          </div>
+        </div>
+        <div class="filter">
+          <div class="saturate">
+            <label for="saturate">Saturate</label>
+            <input
+              type="range"
+              id="saturate"
+              name="saturate"
+              min="0"
+              max="200"
+              value="100"
+            />
+          </div>
+          <div class="contrast">
+            <label for="contrast">Contrast</label>
+            <input
+              type="range"
+              id="contrast"
+              name="contrast"
+              min="0"
+              max="200"
+              value="100"
+            />
+          </div>
+          <div class="brightness">
+            <label for="brightness">Brightness</label>
+            <input
+              type="range"
+              id="brightness"
+              name="brightness"
+              min="0"
+              max="200"
+              value="100"
+            />
+          </div>
+          <div class="sepia">
+            <label for="sepia">Sepia</label>
+            <input
+              type="range"
+              id="sepia"
+              name="sepia"
+              min="0"
+              max="100"
+              value="0"
+            />
+          </div>
+          <div class="grayscale">
+            <label for="grayscale">Grayscale</label>
+            <input
+              type="range"
+              id="grayscale"
+              name="grayscale"
+              min="0"
+              max="1"
+              step=".1"
+            />
+          </div>
+          <div class="blur">
+            <label for="blur">Blur</label>
+            <input
+              type="range"
+              id="blur"
+              name="blur"
+              min="0"
+              max="10"
+              step=".1"
+              value="0"
+            />
+          </div>
+          <div class="hue_rotate">
+            <label for="hue_rotate">Hue Rotate</label>
+            <input
+              type="range"
+              id="hue_rotate"
+              name="hue_rotate"
+              min="0"
+              max="350"
+              value="0"
+            />
+          </div>
+          <div class="buttons">
+            <button id="reset">Reset</button>
+            <button id="download">
+              <a download="images" id="down">Download</a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="app.js"></script>
+  </body>
+</html>
